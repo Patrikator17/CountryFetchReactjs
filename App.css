@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title Styles */
+  .title a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .title a:hover {
+    color: #0078ff;
+  }
+  
+  /* Theme Changer Styles */
+  .theme-changer {
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-changer:hover {
+    color: #0078ff;
+  }
+  
+  .theme-changer i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-changer:hover i {
+    transform: rotate(20deg);
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #2b3945;
+    color: #ffffff;
+  }
+  
+  body.dark-mode header {
+    background-color: #202c37;
+  }
+  
+  body.dark-mode .title a {
+    color: #ffffff;
+  }
+  
+  body.dark-mode .theme-changer {
+    color: #ffffff;
+  }
+
+  /* Main Container for SearchBar and Filter */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .theme-changer {
+      margin-top: 1rem;
+    }
+  }
+  
