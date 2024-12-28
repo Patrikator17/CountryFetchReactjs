@@ -1,5 +1,7 @@
 import React from 'react';
-import '../Filter.css'; // Import CSS styles
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'; // Import the icon
+import '../Filter.css'; // Import your CSS
 
 const Filter = () => {
   return (
@@ -15,7 +17,8 @@ const Filter = () => {
           <option value="europe">Europe</option>
           <option value="oceania">Oceania</option>
         </select>
-        <i className="dropdown-icon fa-solid fa-chevron-down"></i>
+        {/* Add Font Awesome icon */}
+        <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" />
       </div>
     </div>
   );

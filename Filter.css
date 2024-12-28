@@ -39,16 +39,19 @@
     box-shadow: 0 2px 5px rgba(0, 120, 255, 0.3);
   }
   
+ 
+
   /* Dropdown Icon */
-  .dropdown-icon {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #666;
-    pointer-events: none;
-    font-size: 1rem;
-  }
+.dropdown-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1rem;
+  pointer-events: none; /* Prevent interaction with the icon */
+}
+
   
   /* Responsive Design */
   @media (max-width: 768px) {
